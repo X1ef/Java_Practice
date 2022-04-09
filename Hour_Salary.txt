@@ -1,0 +1,11 @@
+public class Hour_Salary extends Salary{
+    private double hourSalary;
+
+    public Hour_Salary(double hourSalary){
+        this.hourSalary = hourSalary;
+    }
+
+    public double calculateSalary(){
+        return 20.8*8*hourSalary;
+    }
+}

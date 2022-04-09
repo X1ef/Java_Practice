@@ -1,0 +1,11 @@
+public class Fixed_Salary extends Salary{
+    private double monthSalary;
+
+    public Fixed_Salary(double monthSalary){
+        this.monthSalary = monthSalary;
+    }
+
+    public double calculateSalary(){
+        return monthSalary;
+    }
+}
