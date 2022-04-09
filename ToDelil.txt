@@ -1,0 +1,5 @@
+public class ToDelil implements Converter{
+    public double convert(double celcius){
+        return celcius+99.3;
+    }
+}
