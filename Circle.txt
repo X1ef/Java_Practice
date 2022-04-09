@@ -1,0 +1,14 @@
+public class Circle extends Figure_ploskie{
+    private double r;
+
+    public Circle(double r){
+        this.r = r;
+    }
+
+    public double area(){
+        return Math.PI*r*r;
+    }
+    public double perimetr(){
+        return 2*Math.PI*r;
+    }
+}

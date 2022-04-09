@@ -1,0 +1,4 @@
+public abstract class Figure_ploskie {
+    abstract double area();
+    abstract double perimetr();
+}

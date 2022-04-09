@@ -1,0 +1,20 @@
+public class PrismTest {
+    public static void main(String[] args) {
+        Triangle triangle1 = new Triangle(3,2,1.5);
+        Circle circle1 = new Circle(10);
+        Trapezia trapezia1 = new Trapezia(5,8,8,10);
+        Rectangular rectangular1 = new Rectangular(7,2);
+        Prism prism1 = new Prism(circle1, 5);
+        System.out.println("Объем цилиндра = "+prism1.volume());
+        System.out.println("Площадь поверхности цилиндра = " + prism1.surfaceArea());
+        Prism prism2 = new Prism(trapezia1, 4);
+        System.out.println("Объем с трапецией в основании = "+prism2.volume());
+        System.out.println("Площадь поверхности призмы с трапецией в основании = " + prism2.surfaceArea());
+        Prism prism3 = new Prism(triangle1, 3);
+        System.out.println("Объем с треугольником в основании = "+prism3.volume());
+        System.out.println("Площадь поверхности призмы с треугольником в основании = " + prism3.surfaceArea());
+        Prism prism4 = new Prism(rectangular1, 2);
+        System.out.println("Объем призмы с прямоугольником в основании = "+prism4.volume());
+        System.out.println("Площадь поверхности призмы с прямоугольником в основании = " + prism4.surfaceArea());
+    }
+}

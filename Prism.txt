@@ -1,0 +1,22 @@
+public class Prism {
+    private Figure_ploskie base;
+    private double h;
+
+    public Prism(Figure_ploskie base, double h) {
+        this.base = base;
+        this.h = h;
+    }
+
+    // метод вычисления объема
+    public double volume() {
+        return base.area()*h;
+    }
+
+    // площадь поверхности
+    public double surfaceArea() {
+        double area = 0;
+        area += 2 * base.area();
+        area+= h*base.perimetr();
+        return area;
+    }
+}

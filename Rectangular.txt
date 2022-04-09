@@ -1,0 +1,16 @@
+public class Rectangular extends Figure_ploskie{
+    private double a;
+    private double b;
+
+    public Rectangular(double a, double b){
+        this.a = a;
+        this.b = b;
+    }
+
+    public double area(){
+        return a*b;
+    }
+    public double perimetr(){
+        return 2*(a+b);
+    }
+}
